@@ -1,0 +1,955 @@
+[
+  {
+    "id": "bj-rose",
+    "name": "月季",
+    "latinName": "Rosa chinensis",
+    "provinces": [
+      "北京市"
+    ],
+    "coordinates": [
+      109.17,
+      31.34
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Rosa_chinensis.jpg/960px-Rosa_chinensis.jpg",
+    "description": "月季被称为\"花中皇后\"，北京市花之一，四季开花，以春秋两季最盛，花色丰富，象征和平与友谊。",
+    "color": "#e8365d"
+  },
+  {
+    "id": "bj-chrysanthemum",
+    "name": "菊花",
+    "latinName": "Chrysanthemum morifolium",
+    "provinces": [
+      "北京市",
+      "天津市",
+      "山东省"
+    ],
+    "coordinates": [
+      113.76,
+      29.33
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "imageUrl": "",
+    "description": "菊花为北京市花之一，历史悠久，品种繁多，是重阳节的代表花卉，象征长寿与坚韧。",
+    "color": "#f5c518"
+  },
+  {
+    "id": "sh-magnolia",
+    "name": "白玉兰",
+    "latinName": "Magnolia denudata",
+    "provinces": [
+      "上海市"
+    ],
+    "coordinates": [
+      111.05,
+      32.52
+    ],
+    "seasons": [
+      "winter",
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/Yulan_1.JPG",
+    "description": "白玉兰是上海市花，早春盛开，花朵洁白如玉，香气清雅，是春天的使者，象征纯洁与高雅。",
+    "color": "#f8f4e8"
+  },
+  {
+    "id": "cq-camellia",
+    "name": "山茶花",
+    "latinName": "Camellia japonica",
+    "provinces": [
+      "重庆市"
+    ],
+    "coordinates": [
+      116.47,
+      29.34
+    ],
+    "seasons": [
+      "winter",
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Camellia_japonica_NBG.jpg/960px-Camellia_japonica_NBG.jpg",
+    "description": "山茶花为重庆市花，冬春盛开，花大色艳，耐寒性强，象征坚贞与高洁。",
+    "color": "#c0392b"
+  },
+  {
+    "id": "hb-plum",
+    "name": "梅花",
+    "latinName": "Prunus mume",
+    "provinces": [
+      "湖北省",
+      "江苏省",
+      "台湾省"
+    ],
+    "coordinates": [
+      112.34,
+      29.85
+    ],
+    "seasons": [
+      "winter",
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Prunus_mume.JPG/960px-Prunus_mume.JPG",
+    "description": "梅花为湖北省省花，武汉东湖梅园是全国最大的梅花观赏地之一，凌寒独放，象征坚强与高洁。",
+    "color": "#ff6b9d"
+  },
+  {
+    "id": "hn-lotus",
+    "name": "荷花",
+    "latinName": "Nelumbo nucifera",
+    "provinces": [
+      "湖南省",
+      "河北省",
+      "河南省",
+      "安徽省",
+      "澳门特别行政区",
+      "云南省",
+      "四川省"
+    ],
+    "coordinates": [
+      116.92,
+      31.08
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Sacred_lotus_Nelumbo_nucifera.jpg/960px-Sacred_lotus_Nelumbo_nucifera.jpg",
+    "description": "荷花为湖南省省花，夏季盛开，\"出淤泥而不染\"，是纯洁与高尚的象征，洞庭湖区荷花遍野。",
+    "color": "#ff9eb5"
+  },
+  {
+    "id": "gd-kapok",
+    "name": "木棉花",
+    "latinName": "Bombax ceiba",
+    "provinces": [
+      "广东省"
+    ],
+    "coordinates": [
+      106.08,
+      23.77
+    ],
+    "seasons": [
+      "winter",
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bombax_Ceiba_in_Shatin.jpg/960px-Bombax_Ceiba_in_Shatin.jpg",
+    "description": "木棉花为广东省省花，广州市花，英雄花，春季盛开，花大色红，象征英雄气概与南国风情。",
+    "color": "#e74c3c"
+  },
+  {
+    "id": "gz-azalea",
+    "name": "杜鹃花",
+    "latinName": "Rhododendron simsii",
+    "provinces": [
+      "贵州省",
+      "江西省"
+    ],
+    "coordinates": [
+      117.36,
+      27.72
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rhododendron_simsii-bunga_2-Lany_pirna.jpg/960px-Rhododendron_simsii-bunga_2-Lany_pirna.jpg",
+    "description": "杜鹃花为贵州省省花，贵州百里杜鹃林是世界最大的天然杜鹃林海，春季漫山遍野，璀璨壮观。",
+    "color": "#e91e8c"
+  },
+  {
+    "id": "yn-rhododendron",
+    "name": "云南山茶",
+    "latinName": "Camellia reticulata",
+    "provinces": [
+      "云南省"
+    ],
+    "coordinates": [
+      101.16,
+      26.24
+    ],
+    "seasons": [
+      "winter",
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Camellia_reticulata_RHS.jpeg/960px-Camellia_reticulata_RHS.jpeg",
+    "description": "云南山茶为云南省省花，是世界山茶花的原始分布中心，花大如盘，色彩绚丽，被誉为\"云南之骄傲\"。",
+    "color": "#c0392b"
+  },
+  {
+    "id": "sc-peony",
+    "name": "芙蓉花",
+    "latinName": "Hibiscus mutabilis",
+    "provinces": [
+      "四川省"
+    ],
+    "coordinates": [
+      115.83,
+      28.43
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Mufurong1.jpg/960px-Mufurong1.jpg",
+    "description": "芙蓉花为成都市花，秋季盛开，一日三变色，朝白午红暮紫，成都自古有\"蓉城\"之称。",
+    "color": "#ff69b4"
+  },
+  {
+    "id": "sx-peony",
+    "name": "牡丹",
+    "latinName": "Paeonia suffruticosa",
+    "provinces": [
+      "山西省",
+      "山东省",
+      "河南省",
+      "甘肃省"
+    ],
+    "coordinates": [
+      106.46,
+      33.06
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "imageUrl": "",
+    "description": "牡丹为山西省省花，花王之称，雍容华贵，洛阳牡丹甲天下，是中华民族繁荣昌盛的象征。",
+    "color": "#9b59b6"
+  },
+  {
+    "id": "zj-narcissus",
+    "name": "兰花",
+    "latinName": "Cymbidium sinense",
+    "provinces": [
+      "浙江省",
+      "广东省"
+    ],
+    "coordinates": [
+      106.24,
+      24.32
+    ],
+    "seasons": [
+      "winter",
+      "spring"
+    ],
+    "imageUrl": "",
+    "description": "兰花为浙江省省花，绍兴兰花举世闻名，幽香清远，象征高洁与君子之风，自古为文人所爱。",
+    "color": "#9b7ed8"
+  },
+  {
+    "id": "fj-narcissus",
+    "name": "水仙花",
+    "latinName": "Narcissus tazetta",
+    "provinces": [
+      "福建省"
+    ],
+    "coordinates": [
+      115.25,
+      29.9
+    ],
+    "seasons": [
+      "winter"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Narcissus-tazetta-0006a.jpg/960px-Narcissus-tazetta-0006a.jpg",
+    "description": "水仙花为福建省省花，漳州水仙驰名中外，冬季盛开，清香淡雅，凌波而立，被誉为\"凌波仙子\"。",
+    "color": "#fffde7"
+  },
+  {
+    "id": "hl-lilac",
+    "name": "丁香花",
+    "latinName": "Syringa oblata",
+    "provinces": [
+      "黑龙江省"
+    ],
+    "coordinates": [
+      111.94,
+      37.93
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/SyringaOblata.jpg/960px-SyringaOblata.jpg",
+    "description": "丁香花为哈尔滨市花，春季盛开，紫白两色，香气浓郁，是东北大地春天到来的信号，象征勤劳朴实。",
+    "color": "#9c27b0"
+  },
+  {
+    "id": "jl-crabapple",
+    "name": "君子兰",
+    "latinName": "Clivia miniata",
+    "provinces": [
+      "吉林省"
+    ],
+    "coordinates": [
+      125.32,
+      43.9
+    ],
+    "seasons": [
+      "winter",
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Clivia_miniata%2C_blomme_en_vrugte%2C_Manie_van_der_Schijff_BT%2C_a.jpg/960px-Clivia_miniata%2C_blomme_en_vrugte%2C_Manie_van_der_Schijff_BT%2C_a.jpg",
+    "description": "君子兰为长春市花，冬春盛开，花形端庄，色彩鲜艳，象征君子之德，长春因此有\"君子兰城\"之称。",
+    "color": "#ff5722"
+  },
+  {
+    "id": "ln-azalea",
+    "name": "天女木兰",
+    "latinName": "Magnolia sieboldii",
+    "provinces": [
+      "辽宁省"
+    ],
+    "coordinates": [
+      117.62,
+      33
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/20120522_CamelliaPath_OyamaMagnolia_Cutler_P1240017_%287312701108%29.jpg/960px-20120522_CamelliaPath_OyamaMagnolia_Cutler_P1240017_%287312701108%29.jpg",
+    "description": "天女木兰为辽宁省省花，花朵洁白，芳香四溢，生长在千山等地，是辽宁山地的特色花卉。",
+    "color": "#ffffff"
+  },
+  {
+    "id": "nm-kherlen",
+    "name": "马兰花",
+    "latinName": "Iris lactea",
+    "provinces": [
+      "内蒙古自治区"
+    ],
+    "coordinates": [
+      98.02,
+      39.66
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Iris_lactea_03.JPG/960px-Iris_lactea_03.JPG",
+    "description": "马兰花为内蒙古自治区区花，草原上随风摇曳的蓝紫色花朵，是内蒙古大草原的标志性景色。",
+    "color": "#6c5ce7"
+  },
+  {
+    "id": "sx-osmanthus",
+    "name": "桂花",
+    "latinName": "Osmanthus fragrans",
+    "provinces": [
+      "陕西省",
+      "广西壮族自治区"
+    ],
+    "coordinates": [
+      116.63,
+      28.69
+    ],
+    "seasons": [
+      "summer",
+      "autumn"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Osmanthus_fragrans_%28orange_flowers%29.jpg/960px-Osmanthus_fragrans_%28orange_flowers%29.jpg",
+    "description": "桂花为陕西省省花，汉中桂花节闻名遐迩，秋季香飘十里，是吉祥与友好的象征。",
+    "color": "#f39c12"
+  },
+  {
+    "id": "gs-tiger-lily",
+    "name": "山丹花",
+    "latinName": "Lilium pumilum",
+    "provinces": [
+      "甘肃省"
+    ],
+    "coordinates": [
+      114.19,
+      39.51
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Lilium_pumilum_%28Flower%29_1.JPG/960px-Lilium_pumilum_%28Flower%29_1.JPG",
+    "description": "山丹花为甘肃省省花，丝绸之路沿线山坡上盛开的红色百合，色泽鲜艳，是丝路文化的象征。",
+    "color": "#e74c3c"
+  },
+  {
+    "id": "qh-cranesbill",
+    "name": "高山杜鹃",
+    "latinName": "Rhododendron lapponicum",
+    "provinces": [
+      "青海省"
+    ],
+    "coordinates": [
+      122.75,
+      40.53
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Rhododendron_lapponicum_%287833321068%29.jpg/960px-Rhododendron_lapponicum_%287833321068%29.jpg",
+    "description": "高山杜鹃为青海省代表花卉，生长在高原山地，耐寒耐旱，花色艳丽，是青藏高原的生命奇迹。",
+    "color": "#e84393"
+  },
+  {
+    "id": "nx-wolfberry",
+    "name": "枸杞花",
+    "latinName": "Lycium barbarum",
+    "provinces": [
+      "宁夏回族自治区"
+    ],
+    "coordinates": [
+      103.86,
+      36.46
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Lycium_barbarum_-_Wolfberries_China_7-05.jpg/960px-Lycium_barbarum_-_Wolfberries_China_7-05.jpg",
+    "description": "枸杞花为宁夏代表花卉，小巧的紫色花朵孕育出驰名中外的宁夏枸杞，是塞上明珠的生命之花。",
+    "color": "#8e44ad"
+  },
+  {
+    "id": "xj-rosa",
+    "name": "雪莲花",
+    "latinName": "Saussurea involucrata",
+    "provinces": [
+      "新疆维吾尔自治区"
+    ],
+    "coordinates": [
+      87.54,
+      43.1
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "imageUrl": "",
+    "description": "雪莲花为新疆代表花卉，生长在天山、昆仑山3000米以上的雪线附近，是高山植物中最神奇的花卉，象征圣洁与坚强。",
+    "color": "#ecf0f1"
+  },
+  {
+    "id": "xz-rhododendron",
+    "name": "绿绒蒿",
+    "latinName": "Meconopsis betonicifolia",
+    "provinces": [
+      "西藏自治区"
+    ],
+    "coordinates": [
+      97.01,
+      28.17
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Himalayan_blue_poppy_in_a_Scottish_garden.jpg/960px-Himalayan_blue_poppy_in_a_Scottish_garden.jpg",
+    "description": "绿绒蒿为西藏代表花卉，喜马拉雅山脉特有植物，蓝色花朵极为珍稀，被称为\"喜马拉雅蓝罂粟\"。",
+    "color": "#2980b9"
+  },
+  {
+    "id": "hi-water-coconut",
+    "name": "三角梅",
+    "latinName": "Bougainvillea spectabilis",
+    "provinces": [
+      "海南省",
+      "福建省"
+    ],
+    "coordinates": [
+      111.59,
+      27.49
+    ],
+    "seasons": [
+      "winter",
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Starr_030418-0061_Bougainvillea_spectabilis.jpg/960px-Starr_030418-0061_Bougainvillea_spectabilis.jpg",
+    "description": "三角梅为海南省省花，全年盛开，色彩艳丽，适应性强，是热带海岛风情的典型代表。",
+    "color": "#e91e8c"
+  },
+  {
+    "id": "hk-bauhinia",
+    "name": "洋紫荆",
+    "latinName": "Bauhinia variegata",
+    "provinces": [
+      "香港特别行政区"
+    ],
+    "coordinates": [
+      106.26,
+      23.4
+    ],
+    "seasons": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Bauhinia_variegata_flower.jpg/960px-Bauhinia_variegata_flower.jpg",
+    "description": "洋紫荆为香港特别行政区区花，冬春盛开，五瓣粉紫色花朵构成香港旗帜图案，象征繁荣与美丽。",
+    "color": "#8b008b"
+  },
+  {
+    "id": "xj-lavender",
+    "name": "薰衣草",
+    "latinName": "Lavandula angustifolia",
+    "provinces": [
+      "新疆维吾尔自治区"
+    ],
+    "coordinates": [
+      102.76,
+      38.16
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-087.jpg",
+    "description": "新疆伊犁河谷的薰衣草是中国最著名的薰衣草种植地，被誉为\"东方普罗旺斯\"，紫色花海壮观迷人。",
+    "color": "#7c4dff"
+  },
+  {
+    "id": "yn-tulip",
+    "name": "郁金香",
+    "latinName": "Tulipa gesneriana",
+    "provinces": [
+      "云南省"
+    ],
+    "coordinates": [
+      116.21,
+      40.02
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG/960px-%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG",
+    "description": "云南是中国郁金香的主要产地之一，昆明国际郁金香节吸引数十万游客，花色绚丽，五彩缤纷。",
+    "color": "#e53935"
+  },
+  {
+    "id": "gs-rapeseed",
+    "name": "油菜花",
+    "latinName": "Brassica napus",
+    "provinces": [
+      "甘肃省",
+      "江西省"
+    ],
+    "coordinates": [
+      106.2,
+      31.87
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "imageUrl": "",
+    "description": "甘南高原油菜花是西部著名景观，金黄色花海与雪山草原相映，是春天最壮观的自然画卷之一。",
+    "color": "#fdd835"
+  },
+  {
+    "id": "sc-peach",
+    "name": "桃花",
+    "latinName": "Prunus persica",
+    "provinces": [
+      "四川省",
+      "北京市"
+    ],
+    "coordinates": [
+      117.75,
+      33.41
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "imageUrl": "",
+    "description": "四川龙泉驿桃花故里是全国最大的桃花旅游观光胜地，万亩桃花竞相开放，春意盎然，游人如织。",
+    "color": "#f48fb1"
+  },
+  {
+    "id": "zj-cherry",
+    "name": "樱花",
+    "latinName": "Cerasus serrulata",
+    "provinces": [
+      "浙江省",
+      "湖北省"
+    ],
+    "coordinates": [
+      114.94,
+      31.57
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "imageUrl": "",
+    "description": "浙江杭州、宁波等地是中国最早种植樱花的地区之一，每年春季花期如云似雪，美轮美奂。",
+    "color": "#fce4ec"
+  },
+  {
+    "id": "bj-wisteria",
+    "name": "紫藤",
+    "latinName": "Wisteria sinensis",
+    "provinces": [
+      "北京市"
+    ],
+    "coordinates": [
+      115.79,
+      31.12
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Chinesischer_Blauregen_Detail_Bl%C3%BCtentraube.JPG/960px-Chinesischer_Blauregen_Detail_Bl%C3%BCtentraube.JPG",
+    "description": "北京中山公园的百年紫藤是北京著名赏花景点，藤蔓交错，紫穗垂挂，香气迷人，是春日赏花必去之地。",
+    "color": "#7e57c2"
+  },
+  {
+    "id": "sz-orchid",
+    "name": "蝴蝶兰",
+    "latinName": "Phalaenopsis aphrodite",
+    "provinces": [
+      "广东省"
+    ],
+    "coordinates": [
+      107.1,
+      29.16
+    ],
+    "seasons": [
+      "winter",
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Phalaenopsis_aphrodite_Orchi_0047.jpg/960px-Phalaenopsis_aphrodite_Orchi_0047.jpg",
+    "description": "蝴蝶兰是广东及华南地区重要的兰花品种，花型优美如蝴蝶展翅，是春节最受欢迎的年花之一。",
+    "color": "#f3e5f5"
+  },
+  {
+    "id": "hb-water-lily",
+    "name": "睡莲",
+    "latinName": "Nymphaea tetragona",
+    "provinces": [
+      "湖北省"
+    ],
+    "coordinates": [
+      110.64,
+      35.04
+    ],
+    "seasons": [
+      "summer",
+      "autumn"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Nymphaea_tetragona_var._minima.jpg",
+    "description": "湖北洪湖一带睡莲自然生长，湖面上星星点点的白色睡莲与荷花相映，是湿地生态的珍贵景观。",
+    "color": "#e1f5fe"
+  },
+  {
+    "id": "jl-chrysanthemum",
+    "name": "延边菊花",
+    "latinName": "Chrysanthemum indicum",
+    "provinces": [
+      "吉林省"
+    ],
+    "coordinates": [
+      119.58,
+      35.71
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Chrysanthemum_indicum1.jpg/960px-Chrysanthemum_indicum1.jpg",
+    "description": "延边朝鲜族自治州的菊花融合了朝鲜族花卉文化，秋季金黄的野菊花遍布山野，是长白山秋景代表。",
+    "color": "#ff8f00"
+  },
+  {
+    "id": "zj-azalea",
+    "name": "天台山杜鹃",
+    "latinName": "Rhododendron fortunei",
+    "provinces": [
+      "浙江省"
+    ],
+    "coordinates": [
+      115.18,
+      29.2
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Rhododendron_fortunei1UME.jpg",
+    "description": "浙江天台山华顶杜鹃是中国著名的高山杜鹃观赏地，每年五月杜鹃花开遍山野，粉红色花海壮观无比。",
+    "color": "#f48fb1"
+  },
+  {
+    "id": "xz-glacier-lily",
+    "name": "报春花",
+    "latinName": "Primula veris",
+    "provinces": [
+      "西藏自治区"
+    ],
+    "coordinates": [
+      85.41,
+      45.3
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Primula_veris_230405.jpg/960px-Primula_veris_230405.jpg",
+    "description": "西藏高原的报春花是春季最早开放的野花之一，色彩丰富，从雪线边缘一直绵延到河谷，如同春天的使者。",
+    "color": "#f06292"
+  },
+  {
+    "id": "hl-iris",
+    "name": "鸢尾",
+    "latinName": "Iris tectorum",
+    "provinces": [
+      "黑龙江省"
+    ],
+    "coordinates": [
+      110.4,
+      31.3
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Iris_tectorum_01.JPG/960px-Iris_tectorum_01.JPG",
+    "description": "东北湿地的鸢尾花是东北平原湿地最具代表性的野花，蓝紫色花朵在春末夏初盛开，成片生长极为壮观。",
+    "color": "#5c6bc0"
+  },
+  {
+    "id": "yn-gentian",
+    "name": "龙胆花",
+    "latinName": "Gentiana scabra",
+    "provinces": [
+      "云南省"
+    ],
+    "coordinates": [
+      118.79,
+      33.55
+    ],
+    "seasons": [
+      "summer",
+      "autumn"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Gentiana_scabra2.jpg/960px-Gentiana_scabra2.jpg",
+    "description": "云南高山草甸的龙胆花是高原夏末秋初的标志性花卉，深蓝紫色的花朵在绿色草甸上星星点点，极为珍贵。",
+    "color": "#1a237e"
+  },
+  {
+    "id": "sc-gentian",
+    "name": "四川龙胆",
+    "latinName": "Gentiana sceptrum",
+    "provinces": [
+      "四川省"
+    ],
+    "coordinates": [
+      102.1,
+      32.5
+    ],
+    "seasons": [
+      "summer",
+      "autumn"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Gentiana_sceptrum.jpg",
+    "description": "四川若尔盖草原的龙胆花是高原湿地的代表花卉，蓝紫色花朵点缀在无边的草原上，是川西秘境的珍稀之花。",
+    "color": "#283593"
+  },
+  {
+    "id": "nm-sunflower",
+    "name": "向日葵",
+    "latinName": "Helianthus annuus",
+    "provinces": [
+      "内蒙古自治区"
+    ],
+    "coordinates": [
+      110.7,
+      33.46
+    ],
+    "seasons": [
+      "summer",
+      "autumn"
+    ],
+    "imageUrl": "",
+    "description": "内蒙古乌兰察布等地种植大面积向日葵，金黄色花海随风摇曳，与蓝天白云相映，是草原夏日最壮观的景色。",
+    "color": "#fbc02d"
+  },
+  {
+    "id": "xz-cosmos",
+    "name": "格桑花",
+    "latinName": "Cosmos bipinnatus",
+    "provinces": [
+      "西藏自治区"
+    ],
+    "coordinates": [
+      111.65,
+      34.08
+    ],
+    "seasons": [
+      "summer",
+      "autumn"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Cosmos_bipinnatus_pink%2C_Burdwan%2C_West_Bengal%2C_India_10_01_2013.jpg/960px-Cosmos_bipinnatus_pink%2C_Burdwan%2C_West_Bengal%2C_India_10_01_2013.jpg",
+    "description": "格桑花被藏族人民视为幸福吉祥之花，广泛生长于西藏高原，粉紫色花朵随风起舞，是雪域高原的精神象征。",
+    "color": "#f48fb1"
+  },
+  {
+    "id": "ha-forsythia",
+    "name": "连翘",
+    "latinName": "Forsythia suspensa",
+    "provinces": [
+      "河南省"
+    ],
+    "coordinates": [
+      111.45,
+      35.42
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Forsythia_suspensa1.jpg/960px-Forsythia_suspensa1.jpg",
+    "description": "太行山区的连翘是春天最早开放的野花之一，金黄色小花先于叶片绽放，是北方山地春回大地的信使。",
+    "color": "#f9a825"
+  },
+  {
+    "id": "bj-forsythia",
+    "name": "迎春花",
+    "latinName": "Jasminum nudiflorum",
+    "provinces": [
+      "北京市"
+    ],
+    "coordinates": [
+      114.82,
+      36.7
+    ],
+    "seasons": [
+      "winter",
+      "spring"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Jasminum_nudiflorum.jpg",
+    "description": "迎春花是北京最早报春的花卉，在冰雪消融之际率先开放，金黄色小花挂满枝头，象征希望与春天的到来。",
+    "color": "#f57f17"
+  },
+  {
+    "id": "sx-paeonia",
+    "name": "芍药",
+    "latinName": "Paeonia lactiflora",
+    "provinces": [
+      "山西省",
+      "山东省"
+    ],
+    "coordinates": [
+      113.82,
+      37.13
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Lactiflora1b.UME.jpg/960px-Lactiflora1b.UME.jpg",
+    "description": "扬州是\"芍药之乡\"，但山西芍药同样驰名，春末夏初盛开，花大色艳，与牡丹并称\"花中二绝\"。",
+    "color": "#f06292"
+  },
+  {
+    "id": "gx-jasmine",
+    "name": "茉莉花",
+    "latinName": "Jasminum sambac",
+    "provinces": [
+      "广西壮族自治区"
+    ],
+    "coordinates": [
+      109.73,
+      25.41
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Arabian_jasmin%2C_Tunisia_2010.jpg/960px-Arabian_jasmin%2C_Tunisia_2010.jpg",
+    "description": "广西横县是\"世界茉莉花都\"，茉莉花产量占全国80%以上，花香四溢，用于花茶制作，是中国最重要的茉莉产区。",
+    "color": "#f5f5f5"
+  },
+  {
+    "id": "sc-campsis",
+    "name": "凌霄花",
+    "latinName": "Campsis grandiflora",
+    "provinces": [
+      "四川省"
+    ],
+    "coordinates": [
+      112.97,
+      29.56
+    ],
+    "seasons": [
+      "summer",
+      "autumn"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/CampsisGrandiflora.jpg",
+    "description": "凌霄花在四川古寺庙墙垣上广泛生长，橙红色喇叭状花朵攀援而上，是夏秋古建筑上最常见的攀援花卉。",
+    "color": "#e64a19"
+  },
+  {
+    "id": "ah-azalea",
+    "name": "黄山杜鹃",
+    "latinName": "Rhododendron maculiferum",
+    "provinces": [
+      "安徽省"
+    ],
+    "coordinates": [
+      108.47,
+      30.01
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "imageUrl": "",
+    "description": "黄山杜鹃是黄山特有的珍稀植物，白色带斑点的花朵在云雾中绽放，与奇松怪石相映，是黄山四绝之一的重要组成。",
+    "color": "#fce4ec"
+  },
+  {
+    "id": "ln-lilac",
+    "name": "千山丁香",
+    "latinName": "Syringa villosa",
+    "provinces": [
+      "辽宁省"
+    ],
+    "coordinates": [
+      118.19,
+      39.89
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Syringa_bretschneideri_136-8292.jpg/960px-Syringa_bretschneideri_136-8292.jpg",
+    "description": "辽宁千山的丁香花是辽东山地春天的标志性花卉，白色小花成串盛开，香气浓郁，满山飘香。",
+    "color": "#e1bee7"
+  },
+  {
+    "id": "qh-edelweiss",
+    "name": "火绒草",
+    "latinName": "Leontopodium leontopodioides",
+    "provinces": [
+      "青海省"
+    ],
+    "coordinates": [
+      108.79,
+      38.21
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "imageUrl": "",
+    "description": "青海高原的火绒草（雪绒花）生长在3000米以上的高原草甸，白色绒毛状花朵晶莹圣洁，是高山植物的精灵。",
+    "color": "#fffde7"
+  },
+  {
+    "id": "gd-bauhinia-pink",
+    "name": "宫粉羊蹄甲",
+    "latinName": "Bauhinia variegata var. candida",
+    "provinces": [
+      "广东省"
+    ],
+    "coordinates": [
+      112.25,
+      23.1
+    ],
+    "seasons": [
+      "winter",
+      "spring"
+    ],
+    "imageUrl": "",
+    "description": "宫粉羊蹄甲是广东深圳的代表花卉，粉白相间的大型花朵密密层层，开花时如云似雪，是华南最美的行道树花卉。",
+    "color": "#f8bbd0"
+  }
+]
