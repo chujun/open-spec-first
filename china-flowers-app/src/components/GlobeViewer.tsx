@@ -29,11 +29,32 @@ function isWebGLSupported(): boolean {
   }
 }
 
+function buildPoints(flowers: FlowerRecord[], selectedFlower: FlowerRecord | null): GlobePoint[] {
+  return flowers.map(f => ({
+    lat: f.coordinates[1],
+    lng: f.coordinates[0],
+    color: selectedFlower
+      ? (f.id === selectedFlower.id ? f.color : '#aaaaaa66')
+      : f.color,
+    size: f.id === selectedFlower?.id ? 1.5 : 0.8,
+    flower: f,
+  }))
+}
+
 export default function GlobeViewer({ flowers, selectedFlower, onFlowerClick, onBgClick }: GlobeViewerProps) {
   const mountRef = useRef<HTMLDivElement>(null)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const globeRef = useRef<any>(null)
   const autoRotateTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  // Keep latest props accessible inside async callbacks without stale closures
+  const flowersRef = useRef(flowers)
+  const selectedFlowerRef = useRef(selectedFlower)
+  const onFlowerClickRef = useRef(onFlowerClick)
+  const onBgClickRef = useRef(onBgClick)
+  flowersRef.current = flowers
+  selectedFlowerRef.current = selectedFlower
+  onFlowerClickRef.current = onFlowerClick
+  onBgClickRef.current = onBgClick
 
   const resetAutoRotate = useCallback(() => {
     if (autoRotateTimerRef.current) clearTimeout(autoRotateTimerRef.current)
@@ -43,6 +64,20 @@ export default function GlobeViewer({ flowers, selectedFlower, onFlowerClick, on
     autoRotateTimerRef.current = setTimeout(() => {
       if (globe?.controls?.()) globe.controls().autoRotate = true
     }, 10_000)
+  }, [])
+
+  // Update markers when props change (only if globe already initialized)
+  const updatePoints = useCallback(() => {
+    const globe = globeRef.current
+    if (!globe) return
+    const points = buildPoints(flowersRef.current, selectedFlowerRef.current)
+    globe
+      .pointsData(points)
+      .pointLat((p: GlobePoint) => p.lat)
+      .pointLng((p: GlobePoint) => p.lng)
+      .pointColor((p: GlobePoint) => p.color)
+      .pointAltitude(0.05)
+      .pointRadius((p: GlobePoint) => p.size)
   }, [])
 
   useEffect(() => {
@@ -75,17 +110,20 @@ export default function GlobeViewer({ flowers, selectedFlower, onFlowerClick, on
         dirLight.position.set(5, 3, 5)
         scene.add(dirLight)
 
-        const globeInstance = new ThreeGlobe()
+        // waitForGlobeReady:false 让 globe 立即初始化，无需等图片加载
+        const globeInstance = new ThreeGlobe({ waitForGlobeReady: false, animateIn: false })
           .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
           .atmosphereColor('#3a228a')
           .atmosphereAltitude(0.15)
 
         scene.add(globeInstance as unknown as Object3D)
         globeRef.current = globeInstance
+        // 立即设置点数据
+        updatePoints()
 
         // 初始视角对准中国（东经105°，北纬35°）
         const phi = (90 - 35) * (Math.PI / 180)
-        const theta = (105 - 180) * (Math.PI / 180)
+        const theta = 105 * (Math.PI / 180)
         camera.position.setFromSphericalCoords(280, phi, theta)
         camera.lookAt(scene.position)
 
@@ -131,7 +169,19 @@ export default function GlobeViewer({ flowers, selectedFlower, onFlowerClick, on
             const raycaster = new Raycaster()
             raycaster.setFromCamera(mouse, camera)
             const intersects = raycaster.intersectObjects(scene.children, true)
-            if (intersects.length === 0) onBgClick()
+
+            for (const hit of intersects) {
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              let obj: any = hit.object
+              while (obj) {
+                if (obj.__data?.flower) {
+                  onFlowerClickRef.current(obj.__data.flower)
+                  return
+                }
+                obj = obj.parent
+              }
+            }
+            onBgClickRef.current()
           })
 
           return () => {
@@ -153,28 +203,10 @@ export default function GlobeViewer({ flowers, selectedFlower, onFlowerClick, on
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  // 更新标注点
+  // Sync marker data whenever flowers/selectedFlower change
   useEffect(() => {
-    const globe = globeRef.current
-    if (!globe) return
-
-    const points: GlobePoint[] = flowers.map(f => ({
-      lat: f.coordinates[1],
-      lng: f.coordinates[0],
-      color: selectedFlower
-        ? (f.id === selectedFlower.id ? f.color : '#aaaaaa44')
-        : f.color,
-      size: f.id === selectedFlower?.id ? 0.8 : 0.5,
-      flower: f,
-    }))
-
-    globe
-      .pointsData(points)
-      .pointColor((p: GlobePoint) => p.color)
-      .pointAltitude(0.01)
-      .pointRadius((p: GlobePoint) => p.size)
-      .onPointClick((p: GlobePoint) => onFlowerClick(p.flower))
-  }, [flowers, selectedFlower, onFlowerClick])
+    updatePoints()
+  }, [flowers, selectedFlower, updatePoints])
 
   if (!isWebGLSupported()) {
     return (
