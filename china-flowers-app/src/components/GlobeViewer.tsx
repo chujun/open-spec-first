@@ -67,10 +67,10 @@ export default function GlobeViewer({ flowers, selectedFlower, onFlowerClick, on
   }, [])
 
   // Update markers when props change (only if globe already initialized)
-  const updatePoints = useCallback(() => {
+  const updatePoints = useCallback((flowersData: FlowerRecord[], selectedData: FlowerRecord | null) => {
     const globe = globeRef.current
     if (!globe) return
-    const points = buildPoints(flowersRef.current, selectedFlowerRef.current)
+    const points = buildPoints(flowersData, selectedData)
     globe
       .pointsData(points)
       .pointLat((p: GlobePoint) => p.lat)
@@ -119,7 +119,7 @@ export default function GlobeViewer({ flowers, selectedFlower, onFlowerClick, on
         scene.add(globeInstance as unknown as Object3D)
         globeRef.current = globeInstance
         // 立即设置点数据
-        updatePoints()
+        updatePoints(flowers, selectedFlower)
 
         // 初始视角对准中国（东经105°，北纬35°）
         const phi = (90 - 35) * (Math.PI / 180)
@@ -205,7 +205,7 @@ export default function GlobeViewer({ flowers, selectedFlower, onFlowerClick, on
 
   // Sync marker data whenever flowers/selectedFlower change
   useEffect(() => {
-    updatePoints()
+    updatePoints(flowers, selectedFlower)
   }, [flowers, selectedFlower, updatePoints])
 
   if (!isWebGLSupported()) {

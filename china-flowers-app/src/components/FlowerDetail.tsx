@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X } from 'lucide-react'
 import type { FlowerRecord, Season } from '../types/flower'
@@ -27,6 +27,12 @@ interface FlowerDetailProps {
 export default function FlowerDetail({ flower, onClose }: FlowerDetailProps) {
   const [imgLoaded, setImgLoaded] = useState(false)
   const [imgError, setImgError] = useState(false)
+
+  // 切换花卉时重置图片状态
+  useEffect(() => {
+    setImgLoaded(false)
+    setImgError(false)
+  }, [flower?.id])
 
   const imgSrc = !flower?.imageUrl || imgError ? DEFAULT_IMAGE : flower.imageUrl
 
