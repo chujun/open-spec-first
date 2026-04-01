@@ -1,0 +1,20 @@
+- generic [ref=e3]:
+  - generic:
+    - heading "🌸 中国花卉地图" [level=1]
+    - paragraph: CHINA FLOWERS ATLAS
+  - generic "3D中国花卉地球" [ref=e4]
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - button "🌸 春" [active] [pressed] [ref=e7] [cursor=pointer]:
+        - generic [ref=e8]: 🌸
+        - generic [ref=e9]: 春
+      - button "🌿 夏" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: 🌿
+        - generic [ref=e12]: 夏
+      - button "🍂 秋" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: 🍂
+        - generic [ref=e15]: 秋
+      - button "❄️ 冬" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17]: ❄️
+        - generic [ref=e18]: 冬
+    - generic [ref=e19]: 当前展示 32 种花卉
