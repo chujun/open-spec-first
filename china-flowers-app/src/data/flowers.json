@@ -35,7 +35,7 @@
     "seasons": [
       "autumn"
     ],
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Chrysanthemum_morifolium.jpg/960px-Chrysanthemum_morifolium.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Chrysanthemum_morifolium.jpg/640px-Chrysanthemum_morifolium.jpg",
     "description": "菊花为北京市花之一，历史悠久，品种繁多，是重阳节的代表花卉，象征长寿与坚韧。",
     "color": "#f5c518"
   },
@@ -214,7 +214,7 @@
     "seasons": [
       "spring"
     ],
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Paeonia_suffruticosa1.jpg/960px-Paeonia_suffruticosa1.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Paeonia_suffruticosa1.jpg/640px-Paeonia_suffruticosa1.jpg",
     "description": "牡丹为山西省省花，花王之称，雍容华贵，洛阳牡丹甲天下，是中华民族繁荣昌盛的象征。",
     "color": "#9b59b6"
   },
@@ -234,7 +234,7 @@
       "winter",
       "spring"
     ],
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Cymbidium_tracyanum_PCF.jpg/960px-Cymbidium_tracyanum_PCF.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Cymbidium_tracyanum_PCF.jpg/640px-Cymbidium_tracyanum_PCF.jpg",
     "description": "兰花为浙江省省花，绍兴兰花举世闻名，幽香清远，象征高洁与君子之风，自古为文人所爱。",
     "color": "#9b7ed8"
   },
@@ -420,7 +420,7 @@
     "seasons": [
       "summer"
     ],
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Saussurea_involucrata.jpg/960px-Saussurea_involucrata.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Saussurea_involucrata.jpg/640px-Saussurea_involucrata.jpg",
     "description": "雪莲花为新疆代表花卉，生长在天山、昆仑山3000米以上的雪线附近，是高山植物中最神奇的花卉，象征圣洁与坚强。",
     "color": "#ecf0f1"
   },
@@ -535,7 +535,7 @@
     "seasons": [
       "spring"
     ],
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Brassica_napus_flowering_plant.JPG/960px-Brassica_napus_flowering_plant.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Brassica_napus_flowering_plant.JPG/640px-Brassica_napus_flowering_plant.JPG",
     "description": "甘南高原油菜花是西部著名景观，金黄色花海与雪山草原相映，是春天最壮观的自然画卷之一。",
     "color": "#fdd835"
   },
@@ -554,7 +554,7 @@
     "seasons": [
       "spring"
     ],
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Prunus_persica_JPG1b.jpg/960px-Prunus_persica_JPG1b.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Prunus_persica_JPG1b.jpg/640px-Prunus_persica_JPG1b.jpg",
     "description": "四川龙泉驿桃花故里是全国最大的桃花旅游观光胜地，万亩桃花竞相开放，春意盎然，游人如织。",
     "color": "#f48fb1"
   },
@@ -948,7 +948,7 @@
       "winter",
       "spring"
     ],
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Bauhinia_variegata_in_Hyderabad%2C_AP_W_IMG_5977.jpg/960px-Bauhinia_variegata_in_Hyderabad%2C_AP_W_IMG_5977.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Bauhinia_variegata_in_Hyderabad%2C_AP_W_IMG_5977.jpg/640px-Bauhinia_variegata_in_Hyderabad%2C_AP_W_IMG_5977.jpg",
     "description": "宫粉羊蹄甲是广东深圳的代表花卉，粉白相间的大型花朵密密层层，开花时如云似雪，是华南最美的行道树花卉。",
     "color": "#f8bbd0"
   }

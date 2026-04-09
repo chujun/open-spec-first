@@ -3,7 +3,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { X } from 'lucide-react'
 import type { FlowerRecord, Season } from '../types/flower'
 
-const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1490750967868-88df5691cc2b?w=600&q=80'
+// 生成基于花卉代表色的 SVG 占位图（无需外部网络）
+function makePlaceholder(color: string): string {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect width="600" height="400" fill="${color}1a"/><circle cx="300" cy="185" r="90" fill="${color}33"/><circle cx="300" cy="185" r="55" fill="${color}55"/><circle cx="300" cy="185" r="28" fill="${color}99"/><circle cx="300" cy="185" r="10" fill="${color}"/></svg>`
+  return `data:image/svg+xml,${encodeURIComponent(svg)}`
+}
 
 interface SeasonBadge {
   key: Season
@@ -34,7 +38,9 @@ export default function FlowerDetail({ flower, onClose }: FlowerDetailProps) {
     setImgError(false)
   }, [flower?.id])
 
-  const imgSrc = !flower?.imageUrl || imgError ? DEFAULT_IMAGE : flower.imageUrl
+  const imgSrc = !flower?.imageUrl || imgError
+    ? makePlaceholder(flower?.color ?? '#888888')
+    : flower.imageUrl
 
   return (
     <AnimatePresence>

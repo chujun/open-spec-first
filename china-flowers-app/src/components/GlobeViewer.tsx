@@ -71,13 +71,8 @@ export default function GlobeViewer({ flowers, selectedFlower, onFlowerClick, on
     const globe = globeRef.current
     if (!globe) return
     const points = buildPoints(flowersData, selectedData)
-    globe
-      .pointsData(points)
-      .pointLat((p: GlobePoint) => p.lat)
-      .pointLng((p: GlobePoint) => p.lng)
-      .pointColor((p: GlobePoint) => p.color)
-      .pointAltitude(0.05)
-      .pointRadius((p: GlobePoint) => p.size)
+    // Only update data — accessors are set once during init
+    globe.pointsData(points)
   }, [])
 
   useEffect(() => {
@@ -115,9 +110,21 @@ export default function GlobeViewer({ flowers, selectedFlower, onFlowerClick, on
           .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
           .atmosphereColor('#3a228a')
           .atmosphereAltitude(0.15)
+          // 设为 0 使标注更新立即生效，避免新标注从地球内部动画出现（默认 1000ms）
+          .pointsTransitionDuration(0)
 
         scene.add(globeInstance as unknown as Object3D)
         globeRef.current = globeInstance
+
+        // 访问器仅初始化一次（kapsule 对比函数引用，相同引用不触发更新）
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ;(globeInstance as any)
+          .pointLat((p: GlobePoint) => p.lat)
+          .pointLng((p: GlobePoint) => p.lng)
+          .pointColor((p: GlobePoint) => p.color)
+          .pointAltitude(0.05)
+          .pointRadius((p: GlobePoint) => p.size)
+
         // 立即设置点数据（使用 ref 获取最新值，避免闭包旧数据覆盖季节筛选）
         updatePoints(flowersRef.current, selectedFlowerRef.current)
 
