@@ -118,8 +118,8 @@ export default function GlobeViewer({ flowers, selectedFlower, onFlowerClick, on
 
         scene.add(globeInstance as unknown as Object3D)
         globeRef.current = globeInstance
-        // 立即设置点数据
-        updatePoints(flowers, selectedFlower)
+        // 立即设置点数据（使用 ref 获取最新值，避免闭包旧数据覆盖季节筛选）
+        updatePoints(flowersRef.current, selectedFlowerRef.current)
 
         // 初始视角对准中国（东经105°，北纬35°）
         const phi = (90 - 35) * (Math.PI / 180)
